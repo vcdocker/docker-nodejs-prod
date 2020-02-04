@@ -4,7 +4,7 @@ LABEL Maintainer="Hieupv <hieupv@codersvn.com>" \
   Description="Lightweight container for nodejs application on Alpine Linux."
 
 # Install packages
-RUN apk --no-cache add curl bash supervisor
+RUN apk --no-cache add curl bash supervisor nginx
 
 # Configure supervisord
 ADD ./.docker/supervisor/master.ini /etc/supervisor.d/
